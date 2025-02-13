@@ -1,0 +1,9 @@
+version: '3'
+services:
+  autoencoder:
+    image: autoencoder
+    runtime: nvidia
+    ports:
+    - "8050:8050"
+    environment:
+      - NVIDIA_VISIBLE_DEVICES=all
